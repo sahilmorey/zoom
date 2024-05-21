@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Bet Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="betting-phase">
+            <h2>Choose Two Colors</h2>
+            <div class="color-option" data-color="red" onclick="selectColor(this)">Red</div>
+            <div class="color-option" data-color="yellow" onclick="selectColor(this)">Yellow</div>
+            <div class="color-option" data-color="green" onclick="selectColor(this)">Green</div>
+            <button id="confirm-button" onclick="confirmBets()">Confirm Bets</button>
+        </div>
+        <div id="result-phase" style="display: none;">
+            <h2>Result</h2>
+            <div id="result-color"></div>
+        </div>
+        <div id="timer">Time: <span id="timer-value">10</span> seconds</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
